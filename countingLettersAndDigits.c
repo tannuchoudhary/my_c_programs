@@ -6,18 +6,18 @@ int main()
 {
     char s[100];
     int digits=0,alphabets=0,specialChar=0,spaces=0;
-    int i;
+    int x;
 
     printf("Enter the string:\n");
     gets(s);
 
-    for(i=0;s[i]!='\0';i++)
+    for(x=0;s[x]!='\0';x++)
     {
-        if(s[i]>='0'&&s[i]<='9')                                 //for counting digits
+        if(s[x]>='0'&&s[x]<='9')                                 //for counting digits
             digits++;
-        else if((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')) //for counting alphabets.
+        else if((s[x]>='A'&&s[x]<='Z')||(s[x]>='a'&&s[x]<='z')) //for counting alphabets.
             alphabets++;
-            else if(s[i]==' ')                                  //for counting spaces
+            else if(s[x]==' ')                                  //for counting spaces
                 spaces++;
             else
                 specialChar++;

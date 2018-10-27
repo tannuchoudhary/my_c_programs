@@ -5,7 +5,7 @@ int main()
     printf("enter two numbers:\n");
     scanf("%d%d",&a,&b);
 
-    for(hcf=a<b?a:b;hcf>=1;hcf--)
+    for(hcf=a<b?a:b;hcf>=1;hcf--)  //to find HCF of a number.
         if(a%hcf==0 && b%hcf==0)
         break;
     printf("HCF is %d\n",hcf);
